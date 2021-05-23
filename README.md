@@ -2,7 +2,7 @@
 BioALBERT- A simple and effective pre-trained biomedical language representation model
 
 
-This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks.
+This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. Please refer to our papers (links) for more details.
 
 
 ## Download
@@ -17,7 +17,20 @@ We provide four versions of pre-trained weights. Pre-training was based on the o
 
 4) *BioALBERT-Large v1.1 (PubMed + PMC) - based on ALBERT-Large Model*
 
+Make sure to specify the version of the pre-trained weights used in your work. If you have difficulty choosing which one to use, we recommend using BioALBERT-Base v1.1 (+ PubMed 1M) or BioALBERT-Large v1.1 (+ PubMed 1M) according to your GPU resources. Please note that for BioALBERT-Base, we use the WordPiece vocabulary (vocab.txt) provided by Google, because any new word in the biomedical corpus can be represented by subwords
 
-## Under Construction 
 
-To be continued.................
+## Installation
+
+The following sections introduce the installation and fine-tuning process of BioAlBERT based on PyTorch (python version <= 3.7).
+
+To fine-tune BioALBERT, you need to download BioALBERT pre-training weights. After downloading the pre-trained weights, install BioALBERT using requirements.txt as follows:
+
+```
+git clone https://github.com/usmaann/BioALBERT.git
+cd BioALBERT; pip install -r requirements.txt
+
+```
+
+
+
