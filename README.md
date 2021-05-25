@@ -2,7 +2,7 @@
 BioALBERT- A simple and effective pre-trained biomedical language representation model
 
 
-This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. Please refer to our papers (links) for more details.
+This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. Please refer to our [papers](links) for more details.
 
 
 ## Download
