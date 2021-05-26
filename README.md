@@ -7,15 +7,23 @@ This repository provides the pre-trained BioALBERT models, a biomedical language
 
 ## Download
 
-We provide four versions of pre-trained weights. Pre-training was based on the original ALBERT code, and training details are described in our paper (To be Published). Currently available versions of pre-trained weights are as follows:
+We provide eight versions of pre-trained weights. Pre-training was based on the original ALBERT code, and training details are described in our paper (To be Published). Currently available versions of pre-trained weights are as follows:
 
 1) *[BioALBERT-Base v1.0 (PubMed)]() - based on ALBERT-base Model*
 
 2) *[BioALBERT-Base v1.0 (PubMed + PMC)]() - based on ALBERT-base Model*
+ 
+3) *[BioALBERT-Base v1.0 (PubMed + MIMIC-III)]() - based on ALBERT-base Model*
 
-3) *[BioALBERT-Large v1.1 (PubMed)]() - based on ALBERT-Large Model*
+4) *[BioALBERT-Base v1.0 (PubMed + PMC + MIMIC-III)]() - based on ALBERT-base Model*
 
-4) *[BioALBERT-Large v1.1 (PubMed + PMC)]() - based on ALBERT-Large Model*
+5) *[BioALBERT-Large v1.1 (PubMed)]() - based on ALBERT-Large Model*
+
+6) *[BioALBERT-Large v1.1 (PubMed + PMC)]() - based on ALBERT-Large Model*
+
+7) *[BioALBERT-Large v1.1 (PubMed + MIMIC-III)]() - based on ALBERT-Large Model*
+
+8) *[BioALBERT-Large v1.1 (PubMed + PMC + MIMIC-III)]() - based on ALBERT-Large Model*
 
 Alternately, you can download pre-trained weights from [here]()
 
@@ -33,13 +41,14 @@ git clone https://github.com/usmaann/BioALBERT.git
 cd BioALBERT; pip install -r requirements.txt
 
 ```
+Note that this repository is based on the [ALBERT](https://github.com/google-research/albert) repository by Google. See requirements.txt for other details.
 
 ## Quick Links
 
 | Link | Detail |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| Paper | Paper link with [BibTex]() |
+
 
 ## Datasets
 
