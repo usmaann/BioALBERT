@@ -75,8 +75,7 @@ We provide a pre-processed version of benchmark datasets for each task as follow
 * BioASQ 5b
 * BioASQ 6b
 * 
-
-You can simply run `download.sh` to download all the datasets at once. The folder called `datasets` has all the data you need.
+Open each links and download the datasets you need. For BioASQ datasets, please refer to the [biobert repository](https://github.com/dmis-lab/biobert)
 
 
 ## Fine-tuning BioBERT
