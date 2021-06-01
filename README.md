@@ -56,7 +56,7 @@ We provide a pre-processed version of benchmark datasets for each task as follow
 
 * [Share/Clefe](https://drive.google.com/drive/folders/1zAki8Xuw49QBRWW82w2bXvfjbfDCWrtz?usp=sharing)
 * [BC5CDR (Disease)](https://drive.google.com/drive/folders/1BtEDXwj1bwSZfes8w-4S9mIZLdjTC4nj?usp=sharing)
-* BC5CDR (Chemical)(https://drive.google.com/drive/folders/1b_C-vuOZ7ae1qUeuXZJhdyRSrWgygVMS?usp=sharing)
+* [BC5CDR (Chemical)](https://drive.google.com/drive/folders/1b_C-vuOZ7ae1qUeuXZJhdyRSrWgygVMS?usp=sharing)
 * [JNLPBA](https://drive.google.com/drive/folders/1SMm-cY2XxKsyHvcIR2teNt97N-3zYaXc?usp=sharing)
 * [LINNAEUS](https://drive.google.com/drive/folders/1jQEgdQAdRweoh6vHSYeEOwya7w1VDg2p?usp=sharing)
 * [NCBI (Disease)](https://drive.google.com/drive/folders/1ESm_CF3cU0ZbKP2N8uXiMHz8wKARm-KW?usp=sharing)
