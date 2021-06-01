@@ -81,7 +81,7 @@ We provide a pre-processed version of benchmark datasets for each task as follow
 * BioASQ 5b
 * BioASQ 6b
 
-Open each links and download the datasets you need. For BioASQ datasets, please refer to the [biobert repository](https://github.com/dmis-lab/biobert)
+Open each links and download the datasets you need. For BioASQ datasets, please refer to the [biobert repository](https://github.com/dmis-lab/biobert#datasets)
 
 
 ## Fine-tuning BioBERT
@@ -94,8 +94,37 @@ $ echo $BIOALBERT_DIR
 >>> ./BioALBERT_PUBMED_BASE
 ```
 
-###Datasets
-Each datasets contains dev.tsv, test.tsv, and train.tsv
+### NER
+Each datasets contains four files, which are ```dev.tsv```, ```test.tsv```, ```train_dev.tsv```, and ```train.tsv```. Simply download a dataset from NER and put these files into the directory called ```$NER_DIR```. Also, set ```$OUTPUT_DIR``` as a directory for NER outputs. For example, when fine-tuning on the BC2GM dataset,
+
+```
+$ export NER_DIR=./datasets/NER/BC2GM
+$ export OUTPUT_DIR=./NER_outputs
+```
+Following command runs fine-tuning code on NER with default arguments.
+
+```
+$ mkdir -p $OUTPUT_DIR
+$ python run_ner.py --do_train=true --do_eval=true --vocab_file=$BIOALBERT_DIR/vocab.txt --bert_config_file=$BIOALBERT_DIR/bert_config.json --init_checkpoint=$BIOALBERT_DIR/model.ckpt-1000000 --num_train_epochs=10.0 --data_dir=$NER_DIR --output_dir=$OUTPUT_DIR
+```
+
+### RE
+Each datasets contains there files, which are ```dev.tsv```, ```test.tsv```, and ```train.tsv```. Let ```$RE_DIR``` denote the folder of a single RE data set, ```$TASK_NAME``` denote the task name (two options: gad, euadr), and ```$OUTPUT_DIR``` denote the RE output directory, take GAD as an example:
+
+```
+$ export RE_DIR=./datasets/RE/GAD/1
+$ export TASK_NAME=gad
+$ export OUTPUT_DIR=./re_outputs_1
+```
+Following command runs fine-tuning code on RE with default arguments.
+
+```
+$ python run_re.py --task_name=$TASK_NAME --do_train=true --do_eval=true --do_predict=true --vocab_file=$BIOBERT_DIR/vocab.txt --bert_config_file=$BIOBERT_DIR/bert_config.json --init_checkpoint=$BIOBERT_DIR/model.ckpt-1000000 --max_seq_length=128 --train_batch_size=32 --learning_rate=2e-5 --num_train_epochs=3.0 --do_lower_case=false --data_dir=$RE_DIR --output_dir=$OUTPUT_DIR
+```
+
+### QA
+
+please refer to the [biobert repository](https://github.com/dmis-lab/biobert#question-answering-qa)
 
 
 
