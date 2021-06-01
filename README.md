@@ -25,7 +25,6 @@ We provide eight versions of pre-trained weights. Pre-training was based on the 
 
 8) *[BioALBERT-Large v1.1 (PubMed + PMC + MIMIC-III)](https://drive.google.com/file/d/16KRtHf8Meze2Hcc4vK_GUNhG-9LY6_6P/view?usp=sharing) - based on ALBERT-Large Model*
 
-Alternately, you can download pre-trained weights from [here]()
 
 Make sure to specify the version of the pre-trained weights used in your work. 
 
@@ -55,32 +54,48 @@ Note that this repository is based on the [ALBERT](https://github.com/google-res
 We provide a pre-processed version of benchmark datasets for each task as follows:
 
 * [Share/Clefe](https://drive.google.com/drive/folders/1zAki8Xuw49QBRWW82w2bXvfjbfDCWrtz?usp=sharing)
+* [DDI](https://drive.google.com/drive/folders/1LK1j3oJitxgAUt9W1CkB7IEwY0spePiY?usp=sharing)
+* [ChemProt](https://drive.google.com/drive/folders/1iWAgFtAHowflx7_MTA9wttnoKh_W1C5U?usp=sharing)
+* [i2b2](https://drive.google.com/drive/folders/1Yv4LioykzMlZoUVo3UuGfunGhiAUwmCr?usp=sharing)
+* [BIOSSES](https://drive.google.com/drive/folders/1dJm2cU2hZHlx9-3ZnfJo-dhCvPVYXkcJ?usp=sharing)
+* [MedSTS](https://drive.google.com/drive/folders/1X5l2IEYVKGMMQFNwQjlGPEOhzncZl0Lw?usp=sharing)
+* [MedNLI](https://drive.google.com/drive/folders/1ej9G-m8ceIaP0INkWsw0rvJNSLso5HzW?usp=sharing)
+* [HoC](https://drive.google.com/drive/folders/1_IlZzKnrfnvr2KVoOe40STaqzMRXFd7T?usp=sharing)
+
+### Named Entity Recognition (NER)
+* [BC2GM](https://drive.google.com/drive/folders/130ei5___99HkOoaHg9KJhveC7sJM1Zw4?usp=sharing)
+* [BC4CHEMD](https://drive.google.com/drive/folders/1gASQyQoDtt7Ss2vXyTvR6EwdGzfFBXuJ?usp=sharing)
 * [BC5CDR (Disease)](https://drive.google.com/drive/folders/1BtEDXwj1bwSZfes8w-4S9mIZLdjTC4nj?usp=sharing)
 * [BC5CDR (Chemical)](https://drive.google.com/drive/folders/1b_C-vuOZ7ae1qUeuXZJhdyRSrWgygVMS?usp=sharing)
 * [JNLPBA](https://drive.google.com/drive/folders/1SMm-cY2XxKsyHvcIR2teNt97N-3zYaXc?usp=sharing)
 * [LINNAEUS](https://drive.google.com/drive/folders/1jQEgdQAdRweoh6vHSYeEOwya7w1VDg2p?usp=sharing)
 * [NCBI (Disease)](https://drive.google.com/drive/folders/1ESm_CF3cU0ZbKP2N8uXiMHz8wKARm-KW?usp=sharing)
 * [Species-800 (S800)](https://drive.google.com/drive/folders/1s2k1e7hnW1f9kHOv2AIEfZyL0c0SIBfT?usp=sharing)
-* [BC2GM](https://drive.google.com/drive/folders/130ei5___99HkOoaHg9KJhveC7sJM1Zw4?usp=sharing)
-* [DDI](https://drive.google.com/drive/folders/1LK1j3oJitxgAUt9W1CkB7IEwY0spePiY?usp=sharing)
-* [ChemProt](https://drive.google.com/drive/folders/1iWAgFtAHowflx7_MTA9wttnoKh_W1C5U?usp=sharing)
-* [i2b2](https://drive.google.com/drive/folders/1Yv4LioykzMlZoUVo3UuGfunGhiAUwmCr?usp=sharing)
+
+### Relation Extraction (RE)
 * [Euadr](https://drive.google.com/drive/folders/1XuiG7W93Nce4cDlD8eAnenB7T4pBoXCs?usp=sharing)
 * [GAD](https://drive.google.com/drive/folders/1dFc8eEqrtkf1Nt8etaz3I4WyswUQT9C8?usp=sharing)
-* [BIOSSES](https://drive.google.com/drive/folders/1dJm2cU2hZHlx9-3ZnfJo-dhCvPVYXkcJ?usp=sharing)
-* [MedSTS](https://drive.google.com/drive/folders/1X5l2IEYVKGMMQFNwQjlGPEOhzncZl0Lw?usp=sharing)
-* [MedNLI](https://drive.google.com/drive/folders/1ej9G-m8ceIaP0INkWsw0rvJNSLso5HzW?usp=sharing)
-* [HoC](https://drive.google.com/drive/folders/1_IlZzKnrfnvr2KVoOe40STaqzMRXFd7T?usp=sharing)
+
+### Question Answering (BioASQ)
 * BioASQ 4b
 * BioASQ 5b
 * BioASQ 6b
-* 
+
 Open each links and download the datasets you need. For BioASQ datasets, please refer to the [biobert repository](https://github.com/dmis-lab/biobert)
 
 
 ## Fine-tuning BioBERT
 
-###several datasets
+After downloading one of the pre-trained weights, unzip it to any directory you want, we will denote it as ``` $BIOALBERT_DIR ```. For example, when using BioALBERT-Base v1.0 (PubMed), set the BIOALBERT_DIR environment variable to:
+
+```
+$ export BIOALBERT_DIR=./BioALBERT_PUBMED_BASE
+$ echo $BIOALBERT_DIR
+>>> ./BioALBERT_PUBMED_BASE
+```
+
+###Datasets
+Each datasets contains dev.tsv, test.tsv, and train.tsv
 
 
 
