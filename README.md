@@ -126,5 +126,9 @@ $ python run_re.py --task_name=$TASK_NAME --do_train=true --do_eval=true --do_pr
 
 please refer to the [biobert repository](https://github.com/dmis-lab/biobert#question-answering-qa)
 
+### Citation
 
+### Contact Information
+
+If you have any questions, please submit a Github issue or contact Usman Naseem (usman.naseem@sydney.edu.au)
 
