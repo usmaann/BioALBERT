@@ -2,7 +2,7 @@
 Benchmarking for Biomedical Natural Language Processing Tasks with a Domain Specific ALBERT
 
 
-This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. Please refer to our paper [https://arxiv.org/abs/2107.04374(links) for more details.
+This repository provides the pre-trained BioALBERT models, a biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. Please refer to our paper [https://arxiv.org/abs/2107.04374] for more details.
 
 
 ## Download
