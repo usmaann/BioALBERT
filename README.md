@@ -46,7 +46,14 @@ Note that this repository is based on the [ALBERT](https://github.com/google-res
 
 | Link | Detail |
 | --- | --- |
-| Paper | Paper link with [BibTex]() |
+| Paper | https://arxiv.org/abs/2107.04374 with [BibTex](@misc{naseem2021benchmarking,
+      title={Benchmarking for Biomedical Natural Language Processing Tasks with a Domain Specific ALBERT}, 
+      author={Usman Naseem and Adam G. Dunn and Matloob Khushi and Jinman Kim},
+      year={2021},
+      eprint={2107.04374},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}) |
 
 
 ## Datasets
